@@ -1514,6 +1514,14 @@ optional = false
 python-versions = "*"
 
 [[package]]
+name = "types-docutils"
+version = "0.19.1.1"
+description = "Typing stubs for docutils"
+category = "dev"
+optional = false
+python-versions = "*"
+
+[[package]]
 name = "types-freezegun"
 version = "1.1.10"
 description = "Typing stubs for freezegun"
@@ -1542,11 +1550,14 @@ types-urllib3 = "<1.27"
 
 [[package]]
 name = "types-setuptools"
-version = "65.5.0.1"
+version = "65.6.0.3"
 description = "Typing stubs for setuptools"
 category = "dev"
 optional = false
 python-versions = "*"
+
+[package.dependencies]
+types-docutils = "*"
 
 [[package]]
 name = "types-toml"
@@ -1745,7 +1756,7 @@ sanic = ["sanic"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.7"
-content-hash = "b38a66b23789ca608a25b80223c7782fa2029a80df0f03c442596b44a04de77b"
+content-hash = "3c2685412411983491d0a4e9df3af24bdb69051ea6363f3f823b897a0b900fd3"
 
 [metadata.files]
 aiofiles = [
@@ -2914,6 +2925,10 @@ types-chardet = [
     {file = "types-chardet-5.0.4.tar.gz", hash = "sha256:449a98338fa264ddee88dd3a8141989f0ae920bcc720460c54b9f4374a6c1bb3"},
     {file = "types_chardet-5.0.4-py3-none-any.whl", hash = "sha256:6946e22f32789a473852570810b4afe632172fae03c04bdbffe670606cc4ac11"},
 ]
+types-docutils = [
+    {file = "types-docutils-0.19.1.1.tar.gz", hash = "sha256:be0a51ba1c7dd215d9d2df66d6845e63c1009b4bbf4c5beb87a0d9745cdba962"},
+    {file = "types_docutils-0.19.1.1-py3-none-any.whl", hash = "sha256:a024cada35f0c13cc45eb0b68a102719018a634013690b7fef723bcbfadbd1f1"},
+]
 types-freezegun = [
     {file = "types-freezegun-1.1.10.tar.gz", hash = "sha256:cb3a2d2eee950eacbaac0673ab50499823365ceb8c655babb1544a41446409ec"},
     {file = "types_freezegun-1.1.10-py3-none-any.whl", hash = "sha256:fadebe72213e0674036153366205038e1f95c8ca96deb4ef9b71ddc15413543e"},
@@ -2927,8 +2942,8 @@ types-requests = [
     {file = "types_requests-2.28.11.2-py3-none-any.whl", hash = "sha256:14941f8023a80b16441b3b46caffcbfce5265fd14555844d6029697824b5a2ef"},
 ]
 types-setuptools = [
-    {file = "types-setuptools-65.5.0.1.tar.gz", hash = "sha256:5b297081c8f1fbd992cd8b305a97ed96ee6ffc765e9115124029597dd10b8a71"},
-    {file = "types_setuptools-65.5.0.1-py3-none-any.whl", hash = "sha256:601d45b5e9979d2b931de5403aa11153626a1eadd1ce9727b21f24673ced5ceb"},
+    {file = "types-setuptools-65.6.0.3.tar.gz", hash = "sha256:7ddd7415282fa97ab18e490206067c0cdb126b103743e72ee86783d7af6481c5"},
+    {file = "types_setuptools-65.6.0.3-py3-none-any.whl", hash = "sha256:ad729fc3a9a3946f73915eaab16ce56b30ed5ae998479253d809d76b3889ee09"},
 ]
 types-toml = [
     {file = "types-toml-0.10.8.tar.gz", hash = "sha256:b7e7ea572308b1030dc86c3ba825c5210814c2825612ec679eb7814f8dd9295a"},
